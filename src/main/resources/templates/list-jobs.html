@@ -12,7 +12,7 @@
 
     <div th:fragment="job-listing">
         <th:block th:each="job : ${jobs}">
-            <table class="job-listing">
+            <table class="job-listing table-hover">
                 <tr>
                     <th>ID</th>
                     <td th:text="${job.id}"></td>
@@ -23,7 +23,7 @@
                 </tr>
                 <tr>
                     <th>Employer</th>
-                    <td th:text="${job.employer}"> </td>
+                    <td th:text="${job.employer}"></td>
                 </tr>
                 <tr>
                     <th>Location</th>
